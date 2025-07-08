@@ -1,34 +1,29 @@
 # Physics Computational Projects
 
-This repository contains HTML reports for 3 computational physics projects, generated from Jupyter Notebooks.
+This repository contains three HTML reports submitted for **PHYS 210: Introduction to Computational Physics** at UBC. Each project explores physical systems using numerical simulation techniques and is rendered from Jupyter Notebook to static HTML.
 
-## 📄 Project Files
+## 📁 Projects and Reports
 
-- `Project 1 Revision.html` — Report for Project 1
-- `Project 2 Revisi.html` — Report for Project 2
-- `Project03-Revision.html` — Report for Project 3
+1. [Project 1: Breaking Point of an Object](https://tbui06.github.io/physics-projects/project%201.html)  
+   Analyzes the structural failure point of a falling object using kinematic equations and force balance.
 
-## 🔍 How to View
+2. [Project 2: Multi-Body System Simulation](https://tbui06.github.io/physics-projects/project%202.html)  
+   Simulates interactions in a multi-body gravitational system using Euler and Runge-Kutta methods.
 
-To open a report:
-1. Click on the HTML file in the repo
-2. Click the **“Raw”** button
-3. Right-click → **“Open in new tab”** or save and open in browser
+3. [Project 3: Oscillating System](https://tbui06.github.io/physics-projects/project03.html)  
+   Investigates a driven damped harmonic oscillator and examines resonance behavior through time-evolution plots.
 
-## 🌐 GitHub Pages (Optional)
+> 💡 *Click a project title to view the full HTML report.*
 
-You can also enable GitHub Pages to view the HTML files directly online:
+---
 
-1. Go to `Settings` → `Pages`
-2. Under **“Source”**, choose `main` and folder `/ (root)`
-3. GitHub will give you a URL like:
+## ⚙️ Notes
 
-https://github.com/tbui06/physics-projects.git
-
-
-You can use those links to view the files publicly.
+- Reports are static HTML exports — interactive widgets (if any) won’t function.
+- Source code (Python, Jupyter) is not included in this version, only final reports.
 
 ## 👤 Author
 
-tbui06  
-UBC PHYS 210: Introduction to Computational Physics
+**tbui06**  
+Student, Department of Physics  
+[GitHub Profile →](https://github.com/tbui06)
