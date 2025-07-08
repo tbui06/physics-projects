@@ -22,3 +22,13 @@ You can also enable GitHub Pages to view the HTML files directly online:
 1. Go to `Settings` → `Pages`
 2. Under **“Source”**, choose `main` and folder `/ (root)`
 3. GitHub will give you a URL like:
+
+https://github.com/tbui06/physics-projects.git
+
+
+You can use those links to view the files publicly.
+
+## 👤 Author
+
+tbui06  
+UBC Physics Computational Course
