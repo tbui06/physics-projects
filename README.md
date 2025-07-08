@@ -31,4 +31,4 @@ You can use those links to view the files publicly.
 ## 👤 Author
 
 tbui06  
-UBC Physics Computational Course
+UBC PHYS 210: Introduction to Computational Physics
