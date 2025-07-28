@@ -64,9 +64,9 @@ Simulates a 3D fission chain reaction in a cube of impure ²³⁵U. The simulati
   <img src="images/project3_kfactor_vs_volume.png" width="500" alt="Graph showing stable volume that yields k ≈ 1">
 </p>
 
-##### Neutron Motion Validation
+##### Fission Probability Validation
 <p align="center">
-  <img src="images/project3_neutron_validation.png" width="500" alt="Histograms and 3D neutron positions used for validation">
+  <img src="images/project3_fission_probability_validation.png" width="500" alt="3D fission positions used for validation">
 </p>
 
 ---
