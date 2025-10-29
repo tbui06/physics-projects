@@ -9,27 +9,22 @@ Each project explores a different physical system using **numerical methods** �
 
 ### 1. **Project 4 (PHYS 410): Galaxy Collisions with the Toomre Model**
 
-Two interacting galaxies are modeled as **massive cores** surrounded by **non-gravitating stars**.  
-Stars feel gravity from both cores; cores feel gravity from each other.  
-A **second-order finite-difference (Δt²)** scheme advances positions/velocities, verified via a **three-level convergence test**.
+Two interacting galaxies are modeled as **massive cores** surrounded by **non-gravitating stars**.
+A **second-order finite-difference (Δt²)** scheme advances positions and velocities;  
+the model is validated with a **three-level convergence test**.
 
-**Report & Media**:
-- 📄 [Report (PDF)](reports/PHYS_410_Project_1_Toomre.pdf)
+**Report & Media:**
+- 📄 [Report (PDF)](https://github.com/tbui06/physics-projects/raw/main/PHYS%20410%20Project%201.pdf)
 - 🎞️ Simulation videos:
-  - [Level 8](media/toomre_l8.mp4)
-  - [Level 9](media/toomre_l9.mp4)
-  - [Level 10](media/toomre_l10.mp4)
-
-**Highlights**:
-- Two cores on near-glancing trajectories
-- Stars initialized on circular orbits in the *xy* plane with random radii/angles
-- Tidal tails and slingshot ejections observed
-- Convergence ratio |u₈ − u₉| / |u₉ − u₁₀| ≈ **4**, confirming O(Δt²)
+  - [Level 8](https://github.com/tbui06/physics-projects/raw/main/toomre_l8.mp4)
+  - [Level 9](https://github.com/tbui06/physics-projects/raw/main/toomre_l9.mp4)
+  - [Level 10](https://github.com/tbui06/physics-projects/raw/main/toomre_l10.mp4)
 
 #### 🖼️ Example Output
 <p align="center">
-  <img src="images/toomre_frame_example.png" width="500" alt="Frame from Toomre simulation showing two cores and stellar distributions">
+  <img src="https://github.com/tbui06/physics-projects/raw/main/images/toomre_frame_example.png" width="500" alt="Frame from Toomre simulation showing two cores and stellar distributions">
 </p>
+
 
 ---
 
