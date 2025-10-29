@@ -29,7 +29,7 @@ A **second-order finite-difference (Δt²)** scheme advances positions and veloc
 </p>
 
 <p align="center">
-  <sub>Level 8 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Level 9 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Level 10</sub>
+  <sub>Level 8 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Level 9 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Level 10</sub>
 </p>
 
 **Highlights**
@@ -38,10 +38,21 @@ A **second-order finite-difference (Δt²)** scheme advances positions and veloc
 - Tidal tails and slingshot ejections observed  
 - Convergence ratio |u₈ − u₉| / |u₉ − u₁₀| ≈ 4, confirming O(Δt²)
 
-#### 🖼️ Example Output
 <p align="center">
-  <img src="https://github.com/tbui06/physics-projects/raw/main/images/toomre_frame_example.png" width="500" alt="Frame from Toomre simulation showing two cores and stellar distributions">
+  <img src="https://github.com/tbui06/physics-projects/raw/main/images/410_figure1.png" width="300" alt="Galaxy collision showing tidal tails">
+  <img src="https://github.com/tbui06/physics-projects/raw/main/images/410_figure2.jpg" width="300" alt="Convergence plot: Level 8 vs 9">
+  <img src="https://github.com/tbui06/physics-projects/raw/main/images/410_figure3.jpg" width="300" alt="Convergence plot after scaling, confirming 4× ratio">
 </p>
+
+<p align="center">
+  <sub>
+    (Left) Tidal tails formed after close passage &nbsp;&nbsp;|&nbsp;&nbsp;
+    (Middle) Position difference between Level 8–9 and 9–10 &nbsp;&nbsp;|&nbsp;&nbsp;
+    (Right) 4× scaling confirms second-order convergence
+  </sub>
+</p>
+
+---
 
 ---
 
