@@ -7,30 +7,31 @@ Each project explores a different physical system using **numerical methods** �
 
 ## 📁 Projects and Reports
 
-### 1. **Project 4 (PHYS 410): Galaxy Collisions with the Toomre Model**
+### 1. Project 4 (PHYS 410): Galaxy Collisions with the Toomre Model
 
-Two interacting galaxies are modeled as **massive cores** surrounded by **non-gravitating stars**.
-A **second-order finite-difference (Δt²)** scheme advances positions and velocities, validated via a **three-level convergence test**.
+Two interacting galaxies are modeled as **massive cores** surrounded by **non-gravitating stars**.  
+A **second-order finite-difference (Δt²)** scheme advances positions and velocities, verified via a **three-level convergence test**.
 
 **Report & Media:**
-- 📄 [View Report (PDF)](https://github.com/tbui06/physics-projects/blob/main/PHYS%20410%20Project%201.pdf)
+- 📄 [View Report (PDF)](https://github.com/tbui06/physics-projects/blob/main/reports/PHYS%20410%20Project%201.pdf)
 - 🎞️ Simulation videos (playable inline):
-  <video width="400" controls>
-    <source src="https://github.com/tbui06/physics-projects/raw/main/toomre_l8.mp4" type="video/mp4">
-  </video>
-  <video width="400" controls>
-    <source src="https://github.com/tbui06/physics-projects/raw/main/toomre_l9.mp4" type="video/mp4">
-  </video>
-  <video width="400" controls>
-    <source src="https://github.com/tbui06/physics-projects/raw/main/toomre_l10.mp4" type="video/mp4">
-  </video>
+
+<video width="500" controls>
+  <source src="https://github.com/tbui06/physics-projects/raw/main/toomre_l8.mp4" type="video/mp4">
+</video>
+
+<video width="500" controls>
+  <source src="https://github.com/tbui06/physics-projects/raw/main/toomre_l9.mp4" type="video/mp4">
+</video>
+
+<video width="500" controls>
+  <source src="https://github.com/tbui06/physics-projects/raw/main/toomre_l10.mp4" type="video/mp4">
+</video>
 
 #### 🖼️ Example Output
 <p align="center">
-  <img src="https://github.com/tbui06/physics-projects/raw/main/images/toomre_frame_example.png" width="500" alt="Frame from Toomre simulation showing two cores and stellar distributions">
+  <img src="https://github.com/tbui06/physics-projects/raw/main/images/toomre_frame_example.png" width="500">
 </p>
-
-
 
 ---
 
