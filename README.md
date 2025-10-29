@@ -13,24 +13,8 @@ Two interacting galaxies are modeled as **massive cores** surrounded by **non-gr
 A **second-order finite-difference (Δt²)** scheme advances positions and velocities, verified via a **three-level convergence test**.
 
 **Report & Media**
-- 📄 [View Report (PDF)](https://github.com/tbui06/physics-projects/blob/main/reports/PHYS%20410%20Project%201.pdf)
-- 🎞️ Simulation videos (playable inline):
-
-<p align="center">
-  <video width="300" controls>
-    <source src="https://github.com/tbui06/physics-projects/raw/main/toomre_l8.mp4" type="video/mp4">
-  </video>
-  <video width="300" controls>
-    <source src="https://github.com/tbui06/physics-projects/raw/main/toomre_l9.mp4" type="video/mp4">
-  </video>
-  <video width="300" controls>
-    <source src="https://github.com/tbui06/physics-projects/raw/main/toomre_l10.mp4" type="video/mp4">
-  </video>
-</p>
-
-<p align="center">
-  <sub>Level 8 &nbsp;&nbsp;|&nbsp;&nbsp; Level 9 &nbsp;&nbsp;|&nbsp;&nbsp; Level 10</sub>
-</p>
+- 📄 [View Report (PDF)](https://github.com/tbui06/physics-projects/blob/main/reports/PHYS%20410%20Project%201.pdf)  
+- 🎞️ [▶ Open Interactive Page (Videos + Code)](https://tbui06.github.io/physics-projects/project4.html)
 
 **Highlights**
 - Two cores on near-glancing trajectories  
