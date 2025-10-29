@@ -1,1 +1,99 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PHYS 410 – Galaxy Collisions with the Toomre Model</title>
+<style>
+  body {
+    background-color:#0d1117; color:#e6edf3;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6; margin:2rem auto; max-width:960px; padding:0 1rem;
+  }
+  h1,h2,h3{color:#58a6ff;}
+  video,img{border-radius:10px;margin:10px;}
+  video{border:1px solid #30363d;}
+  .video-grid{display:flex;justify-content:center;flex-wrap:wrap;gap:1rem;}
+  .caption{text-align:center;font-size:0.9rem;color:#8b949e;}
+  pre{
+    background:#161b22;color:#c9d1d9;padding:1rem;border-radius:8px;
+    overflow:auto;font-size:0.85rem;
+  }
+  code{font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;}
+</style>
+</head>
+<body>
+
+<h1>PHYS 410 – Galaxy Collisions with the Toomre Model</h1>
+<p>
+Two interacting galaxies are modeled as <strong>massive cores</strong> surrounded by <strong>non-gravitating stars</strong>.
+A <strong>second-order finite-difference (Δt²)</strong> scheme advances positions and velocities,
+verified via a <strong>three-level convergence test</strong>.
+</p>
+
+<h2>Report & Media</h2>
+<p>📄 <a href="https://github.com/tbui06/physics-projects/blob/main/reports/PHYS%20410%20Project%201.pdf" target="_blank">View Report (PDF)</a></p>
+
+<div class="video-grid">
+  <video width="300" controls><source src="toomre_l8.mp4" type="video/mp4"></video>
+  <video width="300" controls><source src="toomre_l9.mp4" type="video/mp4"></video>
+  <video width="300" controls><source src="toomre_l10.mp4" type="video/mp4"></video>
+</div>
+<p class="caption">Level 8 | Level 9 | Level 10 – Simulation time-evolution of tidal interaction</p>
+
+<h2>Highlights</h2>
+<ul>
+  <li>Two cores on near-glancing trajectories</li>
+  <li>Stars initialized on circular orbits in the xy-plane with random radii and angles</li>
+  <li>Tidal tails and slingshot ejections observed</li>
+  <li>Convergence ratio |u₈–u₉| / |u₉–u₁₀| ≈ 4 (confirming O(Δt²))</li>
+</ul>
+
+<div class="video-grid">
+  <img src="images/410_figure1.png" width="300" alt="Galaxy collision showing tidal tails">
+  <img src="images/410_figure2.jpg" width="300" alt="Convergence plot: Level 8 vs 9">
+  <img src="images/410_figure3.jpg" width="300" alt="Convergence plot after scaling confirming 4× ratio">
+</div>
+<p class="caption">
+(Left) Tidal tails formed after close pass | (Middle) Position difference Levels 8–9 & 9–10 | (Right) 4× scaling confirms 2nd-order convergence
+</p>
+
+<h2>MATLAB Source Code (toomre.m)</h2>
+<pre><code>function [t, r, v] = toomre(tmax, level, mass, nstar, rmin, rmax)
+  ncore = length(mass); nt = 2^level + 1;
+  t = linspace(0, tmax, nt); N = ncore + nstar;
+  r = zeros(N,3,nt); v = zeros(N,3,nt); a = zeros(N,3,nt);
+  deltat = t(2) - t(1); core{1}=1; core{2}=2;
+
+  % Initialize cores
+  r(core{1},1,1)=-2; v(core{1},1,1)=1;
+  r(core{2},1,1)=2; r(core{2},2,1)=2; v(core{2},1,1)=-1;
+
+  % Stars around each core
+  for i=3:N
+    if i<=2+floor(nstar/2)
+      theta=2*pi*rand; radius=rmin+(rmax-rmin)*rand;
+      r(i,1,1)=r(core{1},1,1)+radius*cos(theta);
+      r(i,2,1)=r(core{1},2,1)+radius*sin(theta);
+      vc=sqrt(mass(core{1})/radius);
+      v(i,1,1)=v(core{1},1,1)-vc*sin(theta);
+      v(i,2,1)=v(core{1},2,1)+vc*cos(theta);
+    else
+      theta=2*pi*rand; radius=rmin+(rmax-rmin)*rand;
+      r(i,1,1)=r(core{2},1,1)+radius*cos(theta);
+      r(i,2,1)=r(core{2},2,1)+radius*sin(theta);
+      vc=sqrt(mass(core{2})/radius);
+      v(i,1,1)=v(core{2},1,1)-vc*sin(theta);
+      v(i,2,1)=v(core{2},2,1)+vc*cos(theta);
+    end
+  end
+  % ... (rest of the code)
+end
+</code></pre>
+
+<p><a href="https://github.com/tbui06/physics-projects/blob/main/toomre.m" target="_blank">
+🔗 View full source on GitHub</a></p>
+
+</body>
+</html>
